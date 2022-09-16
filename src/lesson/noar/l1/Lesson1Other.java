@@ -5,14 +5,14 @@ import java.util.Random;
 
 public class Lesson1Other {
 
+	static final String LONG_CALL = "みーん";
+	static final String SHORT_CALL = "みん";
+	static final int FIRST_CALL_TIME = 2;
+	static final int END_CALL_TIME = 1;
+	static final int RANDOM_CALL_TIME_MAX = 8;
+
 	public static void main(String[] args) {
-		
-		final String LONG_CALL = "みーん";
-		final String SHORT_CALL = "みん";
-		final int FIRST_CALL_TIME = 2;
-		final int END_CALL_TIME = 1;
-		final int RANDOM_CALL_TIME_MAX = 8;
-		
+
 		for (int i = 1; i <= 5; i++) {
 			Random rnd = new Random();
 			int randomCallTime = rnd.nextInt(RANDOM_CALL_TIME_MAX) + 1;
