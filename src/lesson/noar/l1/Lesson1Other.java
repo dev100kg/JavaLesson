@@ -6,19 +6,20 @@ import java.util.Random;
 public class Lesson1Other {
 
 	public static void main(String[] args) {
-
+		
+		final String LONG_CALL = "みーん";
+		final String SHORT_CALL = "みん";
+		final int FIRST_CALL_TIME = 2;
+		final int END_CALL_TIME = 1;
+		final int RANDOM_CALL_TIME_MAX = 8;
+		
 		for (int i = 1; i <= 5; i++) {
-			String longCall = "みーん";
-			String shortCall = "みん";
-			int firstCallTime = 2;
-			int endCallTime = 1;
-			int randomCallTimeMax = 8;
 			Random rnd = new Random();
-			int randomCallTime = rnd.nextInt(randomCallTimeMax) + 1;
+			int randomCallTime = rnd.nextInt(RANDOM_CALL_TIME_MAX) + 1;
 			String call = String.join("", 
-					String.join("", Collections.nCopies(firstCallTime, longCall)),
-					String.join("", Collections.nCopies(randomCallTime, shortCall)),
-					String.join("", Collections.nCopies(endCallTime, longCall))
+					String.join("", Collections.nCopies(FIRST_CALL_TIME, LONG_CALL)),
+					String.join("", Collections.nCopies(randomCallTime, SHORT_CALL)),
+					String.join("", Collections.nCopies(END_CALL_TIME, LONG_CALL))
 					);
 			System.out.println(call);
 		}
