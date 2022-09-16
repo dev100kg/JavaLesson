@@ -12,8 +12,9 @@ public class Lesson1Other {
 			String shortCall = "みん";
 			int firstCallTime = 2;
 			int endCallTime = 1;
+			int randomCallTimeMax = 8;
 			Random rnd = new Random();
-			int randomCallTime = rnd.nextInt(8) + 1;
+			int randomCallTime = rnd.nextInt(randomCallTimeMax) + 1;
 			String call = String.join("", 
 					String.join("", Collections.nCopies(firstCallTime, longCall)),
 					String.join("", Collections.nCopies(randomCallTime, shortCall)),
