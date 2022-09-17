@@ -6,6 +6,10 @@ import java.util.List;
 
 public class Lesson3 {
 
+	/**
+	 * メインメソッド
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		List<Human> humanList = new ArrayList<>();
 		humanList.add(new Human("鈴木", new BigDecimal("1.533"), new BigDecimal("67.5")));
