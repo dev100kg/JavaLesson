@@ -1,0 +1,16 @@
+@startuml
+
+class Lesson3{
+    + void main()
+}
+class Human{
+    - String name
+	- BigDecimal bmi
+	- BigDecimal ibw
+	- BigDecimal gap
+    + Human(String name, BigDecimal height, BigDecimal weight)
+    + String adviceMessage()
+
+}
+
+@enduml
