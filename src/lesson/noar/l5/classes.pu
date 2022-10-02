@@ -1,0 +1,56 @@
+@startuml Lesson5
+title クラス図
+class Elephant extends Player {
+    {static} - P_NAME:String
+    {static} - G_RANGE:int
+    {static} - C_RANGE:int
+    {static} - P_RANGE:int
+}
+class Gorilla extends Player {
+    {static} - P_NAME:String
+    {static} - G_RANGE:int
+    {static} - C_RANGE:int
+    {static} - P_RANGE:int
+}
+class Lion extends Player {
+    {static} - P_NAME:String
+    {static} - G_RANGE:int
+    {static} - C_RANGE:int
+    {static} - P_RANGE:int
+}
+class Ostrich extends Player {
+    {static} - P_NAME:String
+    {static} - G_RANGE:int
+    {static} - C_RANGE:int
+    {static} - P_RANGE:int
+}
+class Player {
+    {static} - r:Random
+    - name:String
+    - rangeG:int
+    - rangeP:int
+    - rangeC:int
+    - rangeA:int
+    + choiseHand():int
+    + getName():String
+    + getRangeA():int
+}
+class Lesson5 {
+    {static} - sc:Scanner
+    {static} - CHAR_HAND:String[]
+    {static} - STR_HAND:String[]
+    {static} - HAND:List<String>
+    {static} - BEGIN_MSG:String
+    {static} - DRAW_MSG:String
+    {static} - LOSE_MSG:String
+    {static} - WIN_MSG:String
+    {static} - SEPARATOR:String
+    {static} - START_MSG:String
+    {static} - FINISH_MSG:String
+    {static} + main(String[] args):void
+    {static} - gameJanken(p:Player):boolean
+    {static} - setHand():int
+    {static} - judge(a:int, b:int):int
+}
+
+@enduml
