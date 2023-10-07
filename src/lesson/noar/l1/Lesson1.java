@@ -18,11 +18,11 @@ public class Lesson1 {
 		}
 	}
 
-	public static int getCryTime() {
+	private static int getCryTime() {
 		return rnd.nextInt(RANDOM_CRY_TIME_MAX) + 1;
 	}
 
-	public static String getCicadaCry(int cryTime) {
+	private static String getCicadaCry(int cryTime) {
 		StringBuffer sb = new StringBuffer();
 		sb.append(LONG_CRY.repeat(FIRST_CRY_TIME));
 		sb.append(SHORT_CRY.repeat(cryTime));
