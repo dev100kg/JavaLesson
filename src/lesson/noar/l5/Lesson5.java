@@ -8,16 +8,16 @@ import java.util.Scanner;
 
 public class Lesson5 {
 	private static Scanner sc = new Scanner(System.in);
-	private final static String[] CHAR_HAND = { "g", "c", "p" };
-	private final static String[] STR_HAND = { "グー", "チョキ", "パー" };
-	private final static List<String> HAND = new LinkedList<String>(Arrays.asList(CHAR_HAND));
-	private final static String BEGIN_MSG = "じゃん・けん・ぽん！";
-	private final static String DRAW_MSG = "あいこで・しょ！";
-	private final static String LOSE_MSG = "残念！ここで敗退です！";
-	private final static String WIN_MSG = "見事！あなたの勝ちです！";
-	private final static String SEPARATOR = System.getProperty("line.separator");;
-	private final static String START_MSG = "じゃんけん大会を開始します";
-	private final static String FINISH_MSG = "百獣の王はあなたに決定しました！";
+	private static final String[] CHAR_HAND = { "g", "c", "p" };
+	private static final String[] STR_HAND = { "グー", "チョキ", "パー" };
+	private static final List<String> HAND = new LinkedList<>(Arrays.asList(CHAR_HAND));
+	private static final String BEGIN_MSG = "じゃん・けん・ぽん！";
+	private static final String DRAW_MSG = "あいこで・しょ！";
+	private static final String LOSE_MSG = "残念！ここで敗退です！";
+	private static final String WIN_MSG = "見事！あなたの勝ちです！";
+	private static final String SEPARATOR = System.getProperty("line.separator");
+	private static final String START_MSG = "じゃんけん大会を開始します";
+	private static final String FINISH_MSG = "百獣の王はあなたに決定しました！";
 
 	public static void main(String[] args) {
 		List<Player> players = new ArrayList<>();

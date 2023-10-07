@@ -9,7 +9,7 @@ public class Player {
 	private int rangeP;
 	private int rangeC;
 	private int rangeA;
-	public static int seq=0;
+	public static int seq = 0;
 
 	public Player() {
 
