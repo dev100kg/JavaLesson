@@ -10,7 +10,6 @@ public class Lesson1 {
 	private static final int FIRST_CRY_TIME = 2;
 	private static final int END_CRY_TIME = 1;
 	private static final int RANDOM_CRY_TIME_MAX = 8;
-	private static final Random rnd = new Random();
 
 	public static void main(String[] args) {
 		for (int i = 0; i < REPEAT_TIME; i++) {
@@ -19,6 +18,7 @@ public class Lesson1 {
 	}
 
 	private static int getCryTime() {
+		Random rnd = new Random();
 		return rnd.nextInt(RANDOM_CRY_TIME_MAX) + 1;
 	}
 
