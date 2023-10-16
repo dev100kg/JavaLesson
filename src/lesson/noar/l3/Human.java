@@ -10,7 +10,7 @@ public class Human {
 	//小数点以下の桁数（小数点以下第二位を四捨五入）
 	private static final int DECIMAL_DEGIT = 1;
 	//理想体重のBMI
-	private static final BigDecimal IBW_BMI = new BigDecimal("22");
+	private static final BigDecimal IBW_BMI = BigDecimal.valueOf(22);
 	//メッセージフォーマット
 	private static final String MESSAGE_FORMAT = "%sさんのBMIは%.1fです。標準体重は%.1fkgです。%s";
 
@@ -27,9 +27,9 @@ public class Human {
 	 */
 	public Human(String name, BigDecimal height, BigDecimal weight) {
 		this.name = name;
-		this.bmi = weight.divide(height.pow(2), DECIMAL_DEGIT, RoundingMode.FLOOR);
-		this.ibw = height.pow(2).multiply(IBW_BMI).setScale(DECIMAL_DEGIT, RoundingMode.FLOOR);
-		this.gap = this.ibw.subtract(weight).setScale(DECIMAL_DEGIT, RoundingMode.FLOOR);
+		this.bmi = weight.divide(height.pow(2), DECIMAL_DEGIT, RoundingMode.HALF_UP);
+		this.ibw = height.pow(2).multiply(IBW_BMI).setScale(DECIMAL_DEGIT, RoundingMode.HALF_UP);
+		this.gap = this.ibw.subtract(weight).setScale(DECIMAL_DEGIT, RoundingMode.DOWN);
 	}
 
 	/**
