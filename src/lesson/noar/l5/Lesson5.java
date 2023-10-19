@@ -1,10 +1,11 @@
 package lesson.noar.l5;
 
-import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.Set;
 
 public class Lesson5 {
 	private static Scanner sc = new Scanner(System.in);
@@ -20,7 +21,7 @@ public class Lesson5 {
 	private static final String FINISH_MSG = "百獣の王はあなたに決定しました！";
 
 	public static void main(String[] args) {
-		List<Player> players = new ArrayList<>();
+		Set<Player> players = new LinkedHashSet<>();
 		players.add(new Ostrich());
 		players.add(new Gorilla());
 		players.add(new Lion());
