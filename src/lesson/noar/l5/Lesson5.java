@@ -61,16 +61,16 @@ public class Lesson5 {
 			int cpuHand = p.choiseHand();
 			System.out.println(p.getName() + "：" + STR_HAND[cpuHand]);
 			switch (judge(userHand, cpuHand)) {
-			case 0: {
-				isDraw = true;
-				break;
-			}
-			case 1: {
-				return false;
-			}
-			case 2: {
-				return true;
-			}
+				case 0: {
+					isDraw = true;
+					break;
+				}
+				case 1: {
+					return false;
+				}
+				case 2: {
+					return true;
+				}
 			}
 		}
 	}
