@@ -35,12 +35,12 @@ class Lesson1Test {
     }
 
     @ParameterizedTest
-    @ValueSource(ints = { 1,2,3,4,5,6,7,8 })
+    @ValueSource(ints = { 1, 2, 3, 4, 5, 6, 7, 8 })
     void getCicadaCryTest(int i) throws NoSuchMethodException, SecurityException, IllegalAccessException,
             IllegalArgumentException, InvocationTargetException {
-            String actual = (String) this.doStaticPrivateMethod("getCicadaCry", new Class[] { int.class },
-                    new Object[] { i });
-            assertEquals("みーんみーん" + "みん".repeat(i) + "みーん", actual);
+        String actual = (String) this.doStaticPrivateMethod("getCicadaCry", new Class[] { int.class },
+                new Object[] { i });
+        assertEquals("みーんみーん" + "みん".repeat(i) + "みーん", actual);
     }
 
     @Test
