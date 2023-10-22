@@ -7,11 +7,11 @@ import java.math.RoundingMode;
  * Humanクラス
  */
 public class Human {
-	//小数点以下の桁数（小数点以下第二位を四捨五入）
+	// 小数点以下の桁数（小数点以下第二位を四捨五入）
 	private static final int DECIMAL_DEGIT = 1;
-	//理想体重のBMI
+	// 理想体重のBMI
 	private static final BigDecimal IBW_BMI = BigDecimal.valueOf(22);
-	//メッセージフォーマット
+	// メッセージフォーマット
 	private static final String MESSAGE_FORMAT = "%sさんのBMIは%.1fです。標準体重は%.1fkgです。%s";
 
 	private String name;
@@ -21,6 +21,7 @@ public class Human {
 
 	/**
 	 * コンストラクタ
+	 * 
 	 * @param name
 	 * @param height
 	 * @param weight
@@ -33,11 +34,9 @@ public class Human {
 	}
 
 	/**
-	 * アドバイスメッセージの作成
-	 * 【出力例】
-	 * 〇〇さんのBMIは14.3です。理想体重は〇〇.〇kgです。〇〇.〇kg増やしましょう。
-	 * 〇〇さんのBMIは56.7です。理想体重は〇〇.〇kgです。〇〇.〇kg痩せましょう。
-	 * 〇〇さんのBMIは22.0です。理想体重は〇〇.〇kgです。維持しましょう。
+	 * アドバイスメッセージの作成 【出力例】 〇〇さんのBMIは14.3です。理想体重は〇〇.〇kgです。〇〇.〇kg増やしましょう。
+	 * 〇〇さんのBMIは56.7です。理想体重は〇〇.〇kgです。〇〇.〇kg痩せましょう。 〇〇さんのBMIは22.0です。理想体重は〇〇.〇kgです。維持しましょう。
+	 * 
 	 * @return アドバイスメッセージ
 	 */
 	public String adviceMessage() {

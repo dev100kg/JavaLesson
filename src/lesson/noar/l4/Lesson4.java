@@ -9,10 +9,9 @@ import java.util.Scanner;
 public class Lesson4 {
 
 	private static final Random r = new Random();
-	private static final String[] STATIONS = {
-			"長野", "市役所前", "権堂", "善光寺下", "本郷", "桐原", "信濃吉田", "朝陽", "附属中学前",
-			"柳原", "村山", "日野", "須坂", "北須坂", "小布施", "都住", "桜沢", "延徳", "信州中野",
-			"中野松川", "信濃竹原", "夜間瀬", "上条", "湯田中" };
+	private static final String[] STATIONS =
+			{"長野", "市役所前", "権堂", "善光寺下", "本郷", "桐原", "信濃吉田", "朝陽", "附属中学前", "柳原", "村山", "日野", "須坂",
+					"北須坂", "小布施", "都住", "桜沢", "延徳", "信州中野", "中野松川", "信濃竹原", "夜間瀬", "上条", "湯田中"};
 	private static final String GAME_START_MSG = "長野電鉄長野線ゲーム！いえーい！";
 	private static final String GAME_END_MSG = "congratulation!!";
 	private static final String GAME_BOO_MSG = "ぶーーーーーー";

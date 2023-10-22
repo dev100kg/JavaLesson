@@ -9,8 +9,8 @@ import java.util.Set;
 
 public class Lesson5 {
 	private static Scanner sc = new Scanner(System.in);
-	private static final String[] CHAR_HAND = { "g", "c", "p" };
-	private static final String[] STR_HAND = { "グー", "チョキ", "パー" };
+	private static final String[] CHAR_HAND = {"g", "c", "p"};
+	private static final String[] STR_HAND = {"グー", "チョキ", "パー"};
 	private static final List<String> HAND = new LinkedList<>(Arrays.asList(CHAR_HAND));
 	private static final String BEGIN_MSG = "じゃん・けん・ぽん！";
 	private static final String DRAW_MSG = "あいこで・しょ！";

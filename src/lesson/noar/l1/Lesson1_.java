@@ -4,6 +4,7 @@ import java.util.Random;
 
 public class Lesson1_ {
 	private static final Random r = new Random();
+
 	public static void main(String[] args) {
 
 		for (int i = 1; i <= 5; i++) {
